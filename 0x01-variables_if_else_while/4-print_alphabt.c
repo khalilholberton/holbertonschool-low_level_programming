@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print the alphabet without q and e
+ * Description: Print the alphabet without e and q
  * Return: Always 0 (Success)
  */
 int main(void)
