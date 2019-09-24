@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
+ * print_sign -check if n is +, - or 0.
+ * @n: int type.
  * Returns -1 and prints - if n is less than zero.
  * Returns 0 and prints 0 if n is zero.
  * Returns 1 and prints + if n is greater than zero.
- * @n: int type.
- * print_sign -check if n is +, - or 0
  */
 
 int print_sign(int n)
