@@ -12,10 +12,10 @@ char swapcontainer;
 for (i = 0 ; s[i] != '\0'; i++)
 {}
 i = i - 1;
- for(j = 0 ; j < i/2; j++)
+ for(j = 0 ; j <= i/2; j++)
 {
-swapcontainer = s[i];
-s[i] = s[j];
+swapcontainer = s[i-j];
+s[i-j] = s[j];
 s[j] = swapcontainer;
 }
 }
