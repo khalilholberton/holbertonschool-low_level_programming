@@ -10,7 +10,7 @@ int j;
 j = 0;
 char swapcontainer;
 for (i = 0 ; s[i] != '\0'; i++)
-{}
+;
 i = i - 1;
  for(j = 0 ; j <= i/2; j++)
 {
