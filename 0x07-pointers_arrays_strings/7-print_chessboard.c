@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_diagsums  - check the code for Holberton School students.
+ * print_chessboard  - check the code for Holberton School students.
  * @a : is int type
  */
 void print_chessboard(char (*a)[8])
