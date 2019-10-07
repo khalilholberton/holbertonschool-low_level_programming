@@ -23,6 +23,6 @@ if (!accept[j])
 break;
 i++;
 }
-return(i);
+return (i);
 
 }
