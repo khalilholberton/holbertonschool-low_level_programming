@@ -25,7 +25,7 @@ if (s2 != NULL)
 while (s2[cap2] != '\0')
 cap2++;
 }
-phr = malloc((cap1 + cap2) *sizeof(*phr));
+phr = malloc((cap1 + cap2 + 1) * sizeof(*phr));
 if (phr == NULL)
 return (NULL);
 for (i = 0; i < cap1; i++)
