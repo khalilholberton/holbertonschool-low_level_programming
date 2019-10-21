@@ -1,10 +1,11 @@
+
 #include <stdio.h>
 /**
- * main - Print macro __FILE__
- * Return: Always 0
+ * main - Print __FILE__
+ * Return: 0
  */
 int main(void)
 {
-  printf("%s\n", __FILE__);
-  return (0);
+printf("%s\n", __FILE__);
+return (0);
 }
