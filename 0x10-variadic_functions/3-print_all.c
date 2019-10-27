@@ -26,7 +26,7 @@ printf("%c", va_arg(c, int));
  * Return: void
  */
 
-void print_string (va_list s)
+void print_string(va_list s)
 {
 char *str = va_arg(s, char *);
 
