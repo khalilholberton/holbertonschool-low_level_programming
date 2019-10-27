@@ -2,6 +2,7 @@
 /**
 * sum_them_all - function that returns the sum
 * @n: const unsigned int type
+* @...: elipse
 * Return: sum of numbers
 */
 
