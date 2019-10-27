@@ -1,11 +1,9 @@
 #include "variadic_functions.h"
 /**
-* sum_them_all - function that returns the sum
-* @n: const unsigned int type
-* @...: elipse
-* Return: sum of numbers
+* sum_them_all - sum of all its parameters
+* @n: unsigned int type
+* Return: sum.
 */
-
 int sum_them_all(const unsigned int n, ...)
 {
 int sum = 0;
