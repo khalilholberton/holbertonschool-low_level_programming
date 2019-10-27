@@ -1,6 +1,5 @@
 #ifndef VARIADICFUN_H
 #define VARIADICFUN_H
-#include <stdarg.h>
 
 /**
  * struct oper - pointer to print all
