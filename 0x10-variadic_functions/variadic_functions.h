@@ -10,7 +10,7 @@
 typedef struct  oper
 {
   char *c;
-  void (*fun)(va_list);
+  void (*fun)();
 } oper_t;
 int _putchar(char);
 int sum_them_all(const unsigned int n, ...);
