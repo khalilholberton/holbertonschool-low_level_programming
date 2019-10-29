@@ -4,13 +4,13 @@
 /**
  * struct oper - pointer to print all
  *
- * @c: pointer to input 
+ * @c: pointer to input
  * @fun: pointer to function
  */
 typedef struct  oper
 {
-  char *c;
-  void (*fun)(va_list);
+char *c;
+void (*fun)(va_list);
 } oper_t;
 int _putchar(char);
 int sum_them_all(const unsigned int n, ...);
