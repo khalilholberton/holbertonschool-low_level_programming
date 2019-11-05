@@ -13,9 +13,10 @@ listint_t *tempo;
 
 if (head == NULL)
 return (NULL);
+*tempo = head
 while (head != NULL && i < index)
 {
-tempo = head;
+
 tempo = tempo->next;
 i++;
 }
