@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
  * add_nodeint_end - function that adds a new node at the end of a linkedlist
+ * @head : pointer to head node
  * @n: data of the struct with integer type
  *
  * Return: adress of the new element (last node of the list)
