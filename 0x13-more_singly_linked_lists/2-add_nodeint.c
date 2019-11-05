@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * _putchar - function that adds a new node at the beginning of a linkedlist
+ * add_nodeint - function that adds a new node at the beginning of a linkedlist
  * @head:pointer to head node
  * @n:data of the struct with integer type
  *
