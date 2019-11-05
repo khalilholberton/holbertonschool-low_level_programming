@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * delete_nodeint_at_index - function that deletes the node at index
- * @c: pointer to head node
+ * @head: pointer to head node
  * @index : given position to delete node
  * Return: integer
  */
