@@ -4,7 +4,7 @@
  * dlistint_len - function that returns the
  * number of elements in a linked dlistint_t list
  * @h: pointer to the head
- * Return: number of data
+ * return: number of data
  */
 size_t dlistint_len(const dlistint_t *h)
 {
