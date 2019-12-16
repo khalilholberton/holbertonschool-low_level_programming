@@ -8,12 +8,12 @@
 
 int _atoi(char *s)
 {
-  int i = 0, len = 0, res = 0, sign = 1, tot = 0;
+int i = 0, len = 0, res = 0, sign = 1, tot = 0;
 
-  while (s[len] != '\0')
-    {
-      len++;
-    }
+while (s[len] != '\0')
+{
+len++;
+}
 while (i < len && tot == 0)
 {
 if (s[i] == '-')
