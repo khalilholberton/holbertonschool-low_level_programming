@@ -15,7 +15,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int idx;
 	int count;
 
-
 	idx = 0;
 	if (ht == NULL || key == NULL)
 		return (0);
@@ -37,8 +36,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(tempo->key, key) == 0)
 		{
-
-
 			free(tempo->value);
 			free(node);
 			tempo->value = strdup(value);
