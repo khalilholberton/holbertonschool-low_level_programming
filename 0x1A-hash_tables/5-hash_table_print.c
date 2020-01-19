@@ -9,11 +9,10 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int i;
+	int y;
+	hash_node_t *tempo;
 
 	i = 0;
-	int y;
-
-	hash_node_t *tempo;
 
 	if (!ht)
 		return;
