@@ -37,9 +37,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(tempo->key, key) == 0)
 		{
-			tempo->value = strdup(value);
-			free(node);
+
+
 			free(tempo->value);
+			free(node);
+			tempo->value = strdup(value);
 			return (1);
 		}
 	}
