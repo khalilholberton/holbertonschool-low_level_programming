@@ -13,6 +13,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node;
 	hash_node_t *tempo;
 	unsigned long int idx;
+	int count;
+
 
 	idx = 0;
 	if (ht == NULL || key == NULL)
@@ -21,9 +23,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	if (!value)
 		return (0);
-	if (strlen(key == 0))
+	for (count = 0; key[count] != '\0'; count++)
+		;
+	if (count == 0)
 		return (0);
-
 	node = malloc(sizeof(hash_node_t));
 	if (!node)
 		return (0);
@@ -39,9 +42,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(tempo->value);
 			return (1);
 		}
-
 	}
-
 	node->value = strdup(value);
 	node->key  = strdup(key);
 	node->next = ht->array[idx];
