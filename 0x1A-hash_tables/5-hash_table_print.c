@@ -9,6 +9,13 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int i;
+
+	i = 0;
+
+	unsigned int y;
+
+	y = 0;
+
 	hash_node_t *tempo;
 
 	if (ht == NULL)
@@ -19,8 +26,10 @@ void hash_table_print(const hash_table_t *ht)
 		tempo = ht->array[i];
 		while (tempo)
 		{
+			if (y == 1)
+				printf(", ");
 			printf("'%s': '%s'", tempo->key, tempo->value);
-			printf(", ");
+			y = 1;
 			tempo = tempo->next;
 		}
 
