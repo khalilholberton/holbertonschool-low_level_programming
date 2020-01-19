@@ -8,32 +8,26 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned int i;
 	int y;
+	unsigned long int count;
 	hash_node_t *tempo;
-
-	i = 0;
 
 	if (!ht)
 		return;
 	y = 0;
 	printf("{");
-	while (i < ht->size)
+	for (count = 0; count < ht->size; count++)
 	{
-		tempo = ht->array[i];
+		tempo = ht->array[count];
 		while (tempo)
 		{
-			if (y == 1)
+			if (y == 0)
 				y = 1;
 			else
-			{
 				printf(", ");
-			}
 			printf("'%s': '%s'", tempo->key, tempo->value);
 			tempo = tempo->next;
 		}
-		i++;
-
 	}
 	printf("}\n");
 }
